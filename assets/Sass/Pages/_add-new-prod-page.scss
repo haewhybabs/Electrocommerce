@@ -1,0 +1,57 @@
+
+.add-new-prod-page
+{
+    // Page header
+    .p-header
+    {
+        // Page header title
+        > div
+        {
+            margin: -20px -5px 0px -5px;
+            
+            padding: 10px 15px 10px 20px;
+
+            // Page header text
+            > h4
+            {
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+
+    // Page content wrapper
+    .page-content-wrapper
+    {
+        // General settings
+        .container
+        {
+            .row
+            {                
+                // Column
+                .c-col-add-new-pg
+                {
+                    background: $color1;
+                    
+                    form
+                    {
+                        .sub-btn-wrapper
+                        {
+                            text-align: center;
+
+                            // Button
+                            > button
+                            {
+                                padding: $spacing-smallest $spacing-large;
+
+                                font-size: $font-normal;
+
+                                font-weight: $font-weight-normal;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

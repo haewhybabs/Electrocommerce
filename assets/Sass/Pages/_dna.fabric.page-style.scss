@@ -1,0 +1,33 @@
+
+// 
+// Custom page style
+// 
+
+.page-class
+{
+    .p-header
+    {
+        // Page header title
+        .page-header-title
+        {
+            > h4
+            {
+
+            }
+        }
+    }
+
+    // The page content wrapper
+    .page-content-wrapper
+    {
+        // Container
+        .container
+        {
+            // Row
+            .row
+            {
+
+            }
+        }
+    }
+}

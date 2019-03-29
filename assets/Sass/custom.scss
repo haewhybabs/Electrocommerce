@@ -1,0 +1,44 @@
+
+
+// 
+// General style for the homepage
+// 
+
+// Base
+@import "Base/dna.fabric.mixins";
+@import "Base/dna.fabric.breakpoints";
+
+// Basic Settings
+@import "Settings/dna.fabric.palette";
+@import "Settings/dna.fabric.settings";
+
+// Webpage Sections
+
+// Pages
+@import "Pages/dna.product-inventory";
+@import "Pages/add-new-prod-page";
+@import "Pages/dna.product-overview";
+
+// Fonts
+@import "Fonts/flaticon";
+
+// Universal Inner Page Container
+.p-content
+{
+	padding: $spacing-larger 0;
+
+	// and Grid
+	// .grid
+	// {
+	// 	width: 1100px;
+
+	// 	margin: 0 auto;
+	// }
+}
+
+body, aside a,
+.ztl-package-circle .period,
+.ztl-main-font{
+	// font-family: 'Quicksand',sans-serif;
+}
+

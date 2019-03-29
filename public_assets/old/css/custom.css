@@ -1,0 +1,295 @@
+/* ######################################################### */
+/*    Breakpoints                                            */
+/* ######################################################### */
+/*                                                           */
+/*    NOTE: For order of presidence to work, place the less  */
+/*    specific breakpoints first.                            */
+/*                                                           */
+/*    For example if you want to below-lap to override       */
+/*    below-desk then place the below-desk first             */
+/*                                                           */
+/* ######################################################### */
+.top-bar .container .right-sec > ul {
+  margin: 0;
+  height: 33px; }
+  .top-bar .container .right-sec > ul > li {
+    margin: 0;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .top-bar .container .right-sec > ul > li > a {
+      height: inherit;
+      background: #f36a33;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      font-weight: bold; }
+
+header {
+  padding-top: 0; }
+  header .top-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px; }
+    header .top-header-container .logo {
+      flex-grow: 1; }
+      header .top-header-container .logo > a > img {
+        width: 80px;
+        height: auto; }
+    header .top-header-container .search-bar-wrapper {
+      flex-grow: 1; }
+  header > nav {
+    margin-top: 0 !important; }
+
+header > nav .container .cate .dropdown-menu .mega-inside .navSideBar {
+  padding: 24px 0;
+  background: #f2f2f2; }
+  header > nav .container .cate .dropdown-menu .mega-inside .navSideBar > ul {
+    display: flex;
+    flex-direction: column;
+    width: max-content; }
+    header > nav .container .cate .dropdown-menu .mega-inside .navSideBar > ul > li > a {
+      display: block;
+      padding: 9.6px 36px !important; }
+header > nav .container .cate .dropdown-menu .mega-inside .navMenuContent {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  max-height: 74vh;
+  padding: 24px;
+  overflow-y: scroll; }
+  header > nav .container .cate .dropdown-menu .mega-inside .navMenuContent .mContentWrapper {
+    display: grid;
+    grid-template-rows: auto auto; }
+    header > nav .container .cate .dropdown-menu .mega-inside .navMenuContent .mContentWrapper .mrow {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      padding-bottom: 24px; }
+      header > nav .container .cate .dropdown-menu .mega-inside .navMenuContent .mContentWrapper .mrow .bs-col {
+        padding: 0 16px; }
+
+#blockcart-modal {
+  background: rgba(0, 0, 0, 0.5);
+  font-family: 'Open sans', sans-serif; }
+  #blockcart-modal .modal-dialog {
+    width: 800px;
+    animation-name: dialogSlideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease; }
+    @media only screen and (max-width: 600px) {
+      #blockcart-modal .modal-dialog {
+        max-width: 320px;
+        margin: 0 auto; } }
+    #blockcart-modal .modal-dialog .modal-content .modal-header {
+      background: #f36a33;
+      color: white;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      padding: 0; }
+      #blockcart-modal .modal-dialog .modal-content .modal-header .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        #blockcart-modal .modal-dialog .modal-content .modal-header .header-wrapper .header-title {
+          padding: 16px; }
+          #blockcart-modal .modal-dialog .modal-content .modal-header .header-wrapper .header-title > h4 {
+            font-size: 20.8px;
+            color: white; }
+            @media only screen and (max-width: 600px) {
+              #blockcart-modal .modal-dialog .modal-content .modal-header .header-wrapper .header-title > h4 {
+                font-size: 16px; } }
+        #blockcart-modal .modal-dialog .modal-content .modal-header .header-wrapper .exit {
+          display: none; }
+        #blockcart-modal .modal-dialog .modal-content .modal-header .header-wrapper > button {
+          max-height: 61.7167px;
+          min-height: 61.7167px;
+          border-top-right-radius: 6px;
+          padding: 0 24px; }
+          #blockcart-modal .modal-dialog .modal-content .modal-header .header-wrapper > button:hover, #blockcart-modal .modal-dialog .modal-content .modal-header .header-wrapper > button:focus {
+            background: #f58558; }
+    #blockcart-modal .modal-dialog .modal-content .modal-body .row {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media only screen and (max-width: 600px) {
+        #blockcart-modal .modal-dialog .modal-content .modal-body .row {
+          flex-direction: column; }
+          #blockcart-modal .modal-dialog .modal-content .modal-body .row .fst-col {
+            margin-bottom: 24px; } }
+      #blockcart-modal .modal-dialog .modal-content .modal-body .row .fst-col {
+        justify-content: space-evenly;
+        width: auto; }
+      #blockcart-modal .modal-dialog .modal-content .modal-body .row .scd-col {
+        width: auto; }
+        @media only screen and (max-width: 600px) {
+          #blockcart-modal .modal-dialog .modal-content .modal-body .row .scd-col {
+            text-align: center; } }
+      #blockcart-modal .modal-dialog .modal-content .modal-body .row .col-md-5 {
+        display: flex;
+        align-items: center; }
+        @media only screen and (max-width: 600px) {
+          #blockcart-modal .modal-dialog .modal-content .modal-body .row .col-md-5 {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto; } }
+        #blockcart-modal .modal-dialog .modal-content .modal-body .row .col-md-5 .img-cont-wrap img {
+          width: 150px;
+          height: auto; }
+        #blockcart-modal .modal-dialog .modal-content .modal-body .row .col-md-5 .cont-contr {
+          margin-left: 16px; }
+          #blockcart-modal .modal-dialog .modal-content .modal-body .row .col-md-5 .cont-contr .product-name {
+            font-size: 16px; }
+          @media only screen and (max-width: 600px) {
+            #blockcart-modal .modal-dialog .modal-content .modal-body .row .col-md-5 .cont-contr {
+              text-align: center; } }
+    #blockcart-modal .modal-dialog .modal-content .modal-footer {
+      text-align: center; }
+      @media only screen and (max-width: 600px) {
+        #blockcart-modal .modal-dialog .modal-content .modal-footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; } }
+      #blockcart-modal .modal-dialog .modal-content .modal-footer > button, #blockcart-modal .modal-dialog .modal-content .modal-footer > a {
+        outline: none;
+        border: none;
+        -webkit-appearance: none;
+        background: #f36a33;
+        color: white;
+        border-radius: 16px; }
+        @media only screen and (max-width: 600px) {
+          #blockcart-modal .modal-dialog .modal-content .modal-footer > button, #blockcart-modal .modal-dialog .modal-content .modal-footer > a {
+            height: 36px;
+            width: 160px; } }
+      #blockcart-modal .modal-dialog .modal-content .modal-footer > button {
+        padding: 9.6px 0;
+        margin-right: 16px; }
+        @media only screen and (max-width: 600px) {
+          #blockcart-modal .modal-dialog .modal-content .modal-footer > button {
+            margin: 0 0 16px 0; } }
+        #blockcart-modal .modal-dialog .modal-content .modal-footer > button > span {
+          padding: 9.6px;
+          border-radius: 16px;
+          width: inherit; }
+          @media only screen and (max-width: 600px) {
+            #blockcart-modal .modal-dialog .modal-content .modal-footer > button > span {
+              display: none; } }
+        #blockcart-modal .modal-dialog .modal-content .modal-footer > button:hover > span, #blockcart-modal .modal-dialog .modal-content .modal-footer > button:focus > span {
+          animation-name: fadeGently;
+          animation-duration: 0.7s;
+          -webkit-animation-timing-function: ease;
+          background: rgba(0, 0, 0, 0.3); }
+      #blockcart-modal .modal-dialog .modal-content .modal-footer > a {
+        background: transparent;
+        color: #f36a33;
+        border: 1.5px solid #f36a33;
+        padding: 9.6px; }
+        #blockcart-modal .modal-dialog .modal-content .modal-footer > a:hover, #blockcart-modal .modal-dialog .modal-content .modal-footer > a:focus {
+          background: #f36a33;
+          color: white; }
+
+@keyframes dialogSlideIn {
+  0% {
+    top: -100%;
+    opacity: 0; }
+  25% {
+    opacity: 0; }
+  50% {
+    top: -50%;
+    opacity: 0; }
+  75% {
+    opacity: 0; }
+  100% {
+    top: 0%;
+    opacity: 1; } }
+@keyframes fadeGently {
+  0% {
+    background: rgba(0, 0, 0, 0); }
+  25% {
+    background: rgba(0, 0, 0, 0.1); }
+  50% {
+    background: rgba(0, 0, 0, 0.2); }
+  75% {
+    background: rgba(0, 0, 0, 0.25); }
+  100% {
+    background: rgba(0, 0, 0, 0.3); } }
+.login-sec .container .row-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .login-sec .container .row-grid .tab-sect {
+    margin-bottom: 48px; }
+    .login-sec .container .row-grid .tab-sect .tab-wrap {
+      display: flex;
+      flex-direction: row; }
+      .login-sec .container .row-grid .tab-sect .tab-wrap .login {
+        margin-right: 24px; }
+        .login-sec .container .row-grid .tab-sect .tab-wrap .login > a {
+          font-size: 16px;
+          font-weight: bold;
+          padding: 9.6px 9.6px;
+          border-bottom: 2px solid #f36a33; }
+          .login-sec .container .row-grid .tab-sect .tab-wrap .login > a:focus {
+            cursor: default;
+            border-bottom: 2px solid #f36a33; }
+          .login-sec .container .row-grid .tab-sect .tab-wrap .login > a:hover {
+            color: #f36a33; }
+      .login-sec .container .row-grid .tab-sect .tab-wrap .register {
+        margin-left: 24px; }
+        .login-sec .container .row-grid .tab-sect .tab-wrap .register > a {
+          font-size: 16px;
+          font-weight: bold;
+          padding: 9.6px 16px;
+          border-bottom: 2px solid #f36a33; }
+          .login-sec .container .row-grid .tab-sect .tab-wrap .register > a:active {
+            cursor: default;
+            border-bottom: 2px solid #f36a33; }
+          .login-sec .container .row-grid .tab-sect .tab-wrap .register > a:hover {
+            color: #f36a33; }
+  .login-sec .container .row-grid .social-sect {
+    width: 250px;
+    margin-bottom: 48px; }
+    .login-sec .container .row-grid .social-sect .social-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .login-sec .container .row-grid .social-sect .social-wrap > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        border-radius: 50%;
+        border: 2.5px solid #666666;
+        color: #666666;
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px; }
+        .login-sec .container .row-grid .social-sect .social-wrap > a:hover, .login-sec .container .row-grid .social-sect .social-wrap > a:focus {
+          border: 2.5px solid #f36a33;
+          color: #f36a33; }
+        .login-sec .container .row-grid .social-sect .social-wrap > a > i {
+          font-size: 20.8px; }
+  .login-sec .container .row-grid .or-clause {
+    margin-bottom: 24px; }
+  .login-sec .container .row-grid .col-md-6 > form > ul > li {
+    margin-bottom: 16px; }
+    .login-sec .container .row-grid .col-md-6 > form > ul > li > label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 6px; }
+
+.gen-info {
+  margin-bottom: 72px; }
+  .gen-info .container .sectBody {
+    width: 85%; }
+    .gen-info .container .sectBody .info {
+      font-size: 17px;
+      line-height: 2; }
+
+/*# sourceMappingURL=custom.css.map */

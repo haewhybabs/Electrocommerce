@@ -1,0 +1,92 @@
+
+// 
+// Style for the header section
+// 
+
+// Top bar
+.top-bar
+{
+    // Container
+    .container
+    {
+        .right-sec
+        {
+            > ul
+            {
+                margin: 0;
+
+                height: 33px;
+
+                > li
+                {
+                    margin: 0;
+
+                    height: inherit;
+
+                    display: flex;
+
+                    justify-content: center;
+
+                    align-items: center;
+
+                    > a
+                    {
+                        height: inherit;
+                        background: $color6;
+                        color: $color1;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 10px;
+                        font-weight: $font-weight-bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Middle header
+header
+{
+    padding-top: 0;
+
+    .top-header-container
+    {
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        margin-top: $spacing-small;
+
+        margin-bottom: $spacing-small;
+
+        // Logo
+        .logo
+        {
+            flex-grow: 1;
+            
+            > a { > img { width: 80px; height: auto; } }
+        }
+
+        // Search bar
+        .search-bar-wrapper
+        {
+            flex-grow: 1;
+        }
+
+        // Cart menu
+        > ul
+        {
+
+        }
+    }
+
+    // Navigation Menu
+    > nav
+    {
+        margin-top: 0 !important;
+    }
+}
+

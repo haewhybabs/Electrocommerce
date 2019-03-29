@@ -1,0 +1,307 @@
+
+// 
+// General style for the shopping cart modal
+// 
+
+// General modal container
+#blockcart-modal
+{
+    // Dark modal color
+    background: rgba($color: #000000, $alpha: .5);
+
+    // Font for modal
+    font-family: 'Open sans', sans-serif;
+
+    // Modal main dialog
+    .modal-dialog
+    {
+        // Dialog width
+        width: 800px;
+
+        // Apply animation to slide in modal content
+        animation-name: dialogSlideIn;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+
+        // Mobile
+        @include media($breakpoint-mobile)
+        {
+            max-width: 320px;
+
+            margin: 0 auto;
+        }
+
+        // The main modal content container
+        .modal-content
+        {
+            // The modal header
+            .modal-header
+            {
+                // Header background
+                background: $color6;
+
+                // Header foreground
+                color: $color1;
+
+                // Re border radius
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+
+                // Override padding to zero
+                padding: 0;
+
+                .header-wrapper
+                {
+                    display: flex;
+
+                    align-items: center;
+
+                    justify-content: space-between;
+
+                    .header-title
+                    {
+                        // Restore modal header padding to modal title
+                        padding: $spacing-small;
+
+                        // Modal title
+                        > h4
+                        {
+                            font-size: $font-large; color: $color1;
+
+                            // Mobile
+                            @include media($breakpoint-mobile)
+                            {
+                                font-size: $font-normal;
+                            }
+                        }
+                    }
+
+                    // Close button
+                    .exit
+                    {
+                        display: none;
+                    }
+
+                    // Exit button
+                    > button
+                    { 
+                        // Height
+                        max-height: 61.7167px;
+                        min-height: 61.7167px;
+
+                        // Add hover effect on button hover
+                        @include hocus()
+                        {
+                            background: $color7;
+                        }
+
+                        // Right corner border
+                        border-top-right-radius: 6px;
+
+                        // Padding
+                        padding: 0 $spacing-normal;
+                    }
+                }
+            }
+
+            // The modal body
+            .modal-body
+            {
+                .row
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    // Mobile
+                    @include media($breakpoint-mobile)
+                    {
+                        flex-direction: column;
+                        
+                        // Margin for the top column on mobile
+                        .fst-col
+                        {
+                            margin-bottom: $spacing-normal;
+                        }
+                    }
+
+                    .fst-col
+                    {
+                        justify-content: space-evenly;
+                        width: auto;
+                    }
+
+                    .scd-col
+                    {
+                        width: auto;
+
+                        // Mobile
+                        @include media($breakpoint-mobile)
+                        {
+                            text-align: center;
+                        }
+                    }
+                    
+                    .col-md-5
+                    {
+                        // Flex box
+                        display: flex;
+
+                        align-items: center;
+
+                        // Mobile
+                        @include media($breakpoint-mobile)
+                        {
+                            flex-direction: column;
+
+                            align-items: center;
+                            justify-content: center;
+
+                            width: auto;
+                        }
+
+                        // Image container
+                        .img-cont-wrap { img { width: 150px; height: auto; } }
+
+                        // Content container
+                        .cont-contr
+                        {
+                            // Margin diatance
+                            margin-left: $spacing-small;
+
+                            .product-name
+                            {
+                                font-size: $font-normal;
+                            }
+
+                            // Mobile
+                            @include media($breakpoint-mobile)
+                            {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // The modal footer
+            .modal-footer
+            {
+                // Basic content alignment
+                text-align: center;
+
+                @include media($breakpoint-mobile)
+                {
+                    display: flex;
+
+                    flex-direction: column;
+
+                    align-items: center;
+
+                    justify-content: center;
+                }
+
+                > button, > a
+                {
+                    // Remove default button properties
+                    outline: none;
+                    border: none;
+                    -webkit-appearance: none;
+
+                    // Background and foreground
+                    background: $color6;
+                    color: $color1;
+
+                    border-radius: $spacing-small;
+
+                    // Mobile
+                    @include media($breakpoint-mobile)
+                    {
+                        // Equal height and width
+                        height: $spacing-large;
+                        width: 160px;
+                    }
+                }
+
+                // Button style exclusively
+                > button
+                {
+                    padding: $spacing-smaller 0;
+                    margin-right: $spacing-small;
+
+                    // Mobile
+                    @include media($breakpoint-mobile)
+                    {
+                        margin: 0 0 $spacing-small 0;
+                    }
+
+                    > span
+                    {
+                        padding: $spacing-smaller;
+                        border-radius: $spacing-small;
+                        width: inherit;
+
+                        @include media($breakpoint-mobile)
+                        {
+                            display: none;
+                        }
+                    }
+
+                    @include hocus()
+                    {
+                        > span
+                        {
+                            animation-name: fadeGently;
+
+                            animation-duration: 0.7s;
+
+                            -webkit-animation-timing-function: ease;
+
+                            background: rgba($color: #000000, $alpha: .3);
+                        }
+                    }
+                }
+
+                > a
+                {
+                    // Default background
+                    background: transparent;
+
+                    // Foreground color
+                    color: $color6;
+
+                    // Border around
+                    border: 1.5px solid $color6;
+
+                    padding: $spacing-smaller;
+
+                    @include hocus()
+                    {
+                        background: $color6;
+
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dialog slide in animation
+@keyframes dialogSlideIn
+{
+    0% { top: -100%; opacity: 0; }
+    25% { opacity: 0; }
+    50% { top: -50%; opacity: 0; }
+    75% { opacity: 0; }
+    100% { top: 0%; opacity: 1; }
+}
+
+@keyframes fadeGently
+{
+    0% { background: rgba($color: #000000, $alpha: 0) }
+    25% { background: rgba($color: $color8, $alpha: .1); }
+    50% { background: rgba($color: $color8, $alpha: .2); }
+    75% { background: rgba($color: $color8, $alpha: .25); }
+    100% { background: rgba($color: $color8, $alpha: .3); }
+}

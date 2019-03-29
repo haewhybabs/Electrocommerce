@@ -1,0 +1,30 @@
+// 
+// Custom style for the about page
+// 
+
+.gen-info
+{
+    margin-bottom: $spacing-largest;
+
+    .container
+    {
+        // Section Heading
+        .heading
+        {
+
+        }
+
+        // Body
+        .sectBody
+        {
+            width: 85%;
+
+            .info
+            {
+                font-size: 17px;
+
+                line-height: 2;
+            }
+        }
+    }
+}

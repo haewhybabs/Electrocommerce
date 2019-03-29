@@ -1,0 +1,22 @@
+
+
+// 
+// General style for the homepage
+// 
+
+// Base
+@import "Base/dna.fabric.mixins";
+@import "Base/dna.fabric.breakpoints";
+
+// Basic Settings
+@import "Settings/dna.fabric.palette";
+@import "Settings/dna.fabric.settings";
+
+// Webpage Sections
+@import "Sections/header";
+@import "Sections/dna.mega-menu";
+@import "Sections/shoppingcartmodal";
+
+// Pages
+@import "Pages/dna.sign_in_page.scss";
+@import "Pages/dna.about-page";

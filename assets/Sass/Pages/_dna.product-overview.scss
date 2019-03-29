@@ -1,0 +1,153 @@
+
+// 
+// Custom style for the product inventory page
+// 
+
+.prod-overview-page
+{
+    .p-header
+    {
+        // Page header title
+        .page-header-title
+        {
+            display: inline-block;
+            
+            margin: -20px -5px 0px -5px;
+            
+            padding: 10px 15px 10px 20px;
+
+            > h4
+            {
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        // Link wrapper to navigate to add new product page
+        .add-new-prod-link
+        {
+            display: inline-block;
+
+            > a
+            {
+                background: $color6;
+
+                color: $color1;
+
+                padding: $spacing-smaller $spacing-small;
+
+                border-radius: 5px;
+
+                font-weight: $font-weight-normal;
+            }
+        }
+    }
+
+    // The page content wrapper
+    .page-content-wrapper
+    {
+        // Container
+        .container
+        {
+            // Row
+            .row
+            {
+                .col-md-12
+                {
+                    .panel
+                    {
+                        .panel-body
+                        {
+                            > h4 {  }
+
+                            .row
+                            {
+                                .col-xs-12
+                                {
+                                    .table-responsive
+                                    {
+                                        #products_wrapper
+                                        {
+                                            // General rows
+                                            .row
+                                            {
+
+                                            }
+
+                                            // Row 1
+                                            .row-one
+                                            {
+
+                                            }
+
+                                            // Row 2
+                                            .row-two
+                                            {
+                                                .col-sm-12
+                                                {
+                                                    > table
+                                                    {
+                                                        // Table head
+                                                        > thead
+                                                        {
+                                                            th
+                                                            {
+                                                                // text-align: center;
+                                                            }
+                                                        }
+
+                                                        // Table body
+                                                        > tbody
+                                                        {
+                                                            // Table Row
+                                                            > tr
+                                                            {
+                                                                > td
+                                                                {
+                                                                    // text-align: center;
+                                                                }
+
+                                                                td:nth-child(2), td:nth-child(5)
+                                                                {
+                                                                    width: 25%;
+                                                                }
+
+                                                                td:nth-child(5), td:nth-child(5)
+                                                                {
+                                                                    text-align: center;
+                                                                    
+                                                                    > a
+                                                                    {
+                                                                        text-transform: capitalize;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            // Last table row
+                                                            tr:last-child
+                                                            {
+                                                                > td
+                                                                {
+                                                                    // text-align: center; 
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            // Row 3
+                                            .row-three
+                                            {
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

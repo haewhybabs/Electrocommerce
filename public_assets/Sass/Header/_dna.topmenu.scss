@@ -1,0 +1,191 @@
+
+// 
+// Style the topmenu
+// 
+
+// The navigation menu container
+.nav-container
+{
+    // The menu block logo
+    #logo-second
+    {
+        // Anchor...
+        > a
+        {
+            // For mobile...
+            @include media($breakpoint-mobile)
+            {
+                width: 100px;
+            }
+
+            > img
+            {
+                // For mobile...
+                @include media($breakpoint-mobile)
+                {
+                    min-width: 65px;
+
+                    max-width: 65px;
+
+                    min-height: 65px;
+
+                    max-height: 65px;
+                }
+            }
+        }
+
+        // For mobile...
+        @include media($breakpoint-mobile)
+        {
+            max-width: 100px;
+        }
+    }
+
+    // The toggle menu
+    .menu-toggle
+    {
+
+    }
+
+    // The navigtion wrapper
+    #nav-wrapper
+    {
+        
+        // Navigation...
+        > nav
+        {
+
+        }
+    }
+
+    // Govt. approved badge
+    .col-badge
+    {
+        // position: absolute;
+        
+        // float: right;
+
+        display: inline-flex;
+
+        width: 250px;
+
+        height: 80px;
+
+        justify-content: center;
+        
+        text-align: center;
+
+        transform: rotate(350deg);
+
+        @include media($breakpoint-mobile)
+        {
+            width: 100px;
+        }
+
+        > div
+        {
+            padding: $spacing-smallest;
+
+            margin: auto 0;
+
+            border-radius: 20px;
+
+            background: $color4;
+
+            color: $color1;
+
+            animation-name: multi-background-fade;
+
+            animation-duration: 10s;
+
+            animation-iteration-count: infinite;
+
+            // On mobile...
+            @include media($breakpoint-mobile)
+            {
+                // Reduce font size
+                font-size: $font-small;
+
+                // No background
+                background: none;
+
+                // No background animation
+                animation-name: multi-color-fade;
+
+                // Bright color
+                color: $color6;
+            }
+        }
+    }
+
+    // On Scroll...
+    ._removed
+    {
+        // Hide Badge
+        display: none;
+    }
+
+    // Search tool
+    .ztl-tools-wrapper
+    {
+
+    }
+}
+
+// Multi color fade in/out animation
+@keyframes multi-background-fade
+{
+    0%
+    {
+        background-color: $color3;
+    }
+
+    25%
+    {
+        background-color: $color4;
+    }
+
+    50%
+    {
+        background-color: $color7;
+    }
+
+    75%
+    {
+        background-color: $color6;
+    }
+
+    100%
+    {
+        background-color: $color4;
+    }
+}
+
+// Multicolor fade in/out animation
+@keyframes multi-color-fade
+{
+    0%
+    {
+        color: $color3;
+    }
+
+    25%
+    {
+        color: $color4;
+    }
+
+    50%
+    {
+        color: $color7;
+    }
+
+    75%
+    {
+        color: $color6;
+    }
+
+    100%
+    {
+        color: $color4;
+    }
+}

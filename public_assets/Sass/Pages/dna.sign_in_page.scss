@@ -1,0 +1,228 @@
+// 
+// Custom style for the sign in page
+// 
+
+// Linking
+.linking
+{
+    .container
+    {
+        > ol
+        {
+            > li
+            {
+
+            }
+        }
+    }
+}
+
+.login-sec
+{
+    .container
+    {
+        .row-grid
+        {
+            // Tabs
+            .tab-sect
+            {
+                margin-bottom: $spacing-larger;
+
+                .tab-wrap
+                {
+                    display: flex;
+
+                    flex-direction: row;
+
+                    .login
+                    {
+                        margin-right: $spacing-normal;
+
+                        > a
+                        {
+                            font-size: $font-normal;
+
+                            font-weight: $font-weight-bold;
+
+                            padding: $spacing-smaller $spacing-smaller;
+
+                            border-bottom: 2px solid $color6;
+
+                            &:focus
+                            {
+                                cursor: default;
+
+                                border-bottom: 2px solid $color6;
+                            }
+
+                            // On hover
+                            &:hover
+                            {
+                                color: $color6;
+                            }
+                        }
+                    }
+
+                    .register
+                    {
+                        margin-left: $spacing-normal;
+
+                        > a
+                        {
+                            font-size: $font-normal;
+
+                            font-weight: $font-weight-bold;
+
+                            padding: $spacing-smaller $spacing-small;
+
+                            border-bottom: 2px solid $color6;
+
+                            &:active
+                            {
+                                cursor: default;
+
+                                border-bottom: 2px solid $color6;
+                            }
+
+                            // On hover
+                            &:hover
+                            {
+                                color: $color6;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Social media
+            .social-sect
+            {
+                width: 250px;
+
+                margin-bottom: $spacing-larger;
+
+                .social-wrap
+                {
+                    display: flex;
+
+                    flex-direction: row;
+                    
+                    justify-content: space-evenly;
+
+                    // General icon
+                    > a
+                    {
+                        display: flex;
+
+                        align-items: center;
+
+                        justify-content: center;
+                        
+                        padding: $spacing-small;
+
+                        border-radius: 50%;
+
+                        border: 2.5px solid $color0;
+
+                        color: $color0;
+
+                        min-width: 50px;
+
+                        min-height: 50px;
+
+                        max-width: 50px;
+
+                        max-height: 50px;
+
+                        @include hocus()
+                        {
+                            border: 2.5px solid $color6;
+
+                            color: $color6;
+                        }
+
+                        > i
+                        {
+                            font-size: $font-large;
+                        }
+                    }
+
+                    // Facebook
+                    .facebook
+                    {
+                        > i
+                        {
+
+                        }
+                    }
+
+                    // Twitter
+                    .twitter
+                    {
+                        > i
+                        {
+
+                        }
+                    }
+
+                    // Linked In
+                    .linked-in
+                    {
+                        > i
+                        {
+
+                        }
+                    }
+                }
+            }
+
+            // Or clause
+            .or-clause
+            {
+                margin-bottom: $spacing-normal;
+
+                > span
+                {
+
+                }
+            }
+
+            // Form section
+            .col-md-6
+            {
+                > form
+                {
+                    > ul
+                    {
+                        > li
+                        {
+                            margin-bottom: $spacing-small;
+
+                            > label
+                            {
+                                font-size: $font-normal;
+
+                                font-weight: $font-weight-bold;
+
+                                margin-bottom: $spacing-smallest;
+                            }
+                        }
+                    }
+                }
+            }
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            > div
+            {
+
+            }
+        }
+    }
+}

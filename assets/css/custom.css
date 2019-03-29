@@ -1,0 +1,107 @@
+/* ######################################################### */
+/*    Breakpoints                                            */
+/* ######################################################### */
+/*                                                           */
+/*    NOTE: For order of presidence to work, place the less  */
+/*    specific breakpoints first.                            */
+/*                                                           */
+/*    For example if you want to below-lap to override       */
+/*    below-desk then place the below-desk first             */
+/*                                                           */
+/* ######################################################### */
+.prod-invent-page .p-header .page-header-title {
+  display: inline-block;
+  margin: -20px -5px 0px -5px;
+  padding: 10px 15px 10px 20px; }
+  .prod-invent-page .p-header .page-header-title > h4 {
+    font-weight: bold; }
+.prod-invent-page .p-header .add-new-prod-link {
+  display: inline-block; }
+  .prod-invent-page .p-header .add-new-prod-link > a {
+    background: #d96c06;
+    color: white;
+    padding: 9.6px 16px;
+    border-radius: 5px;
+    font-weight: normal; }
+.prod-invent-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > thead th {
+  text-align: center; }
+.prod-invent-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody > tr > td {
+  text-align: center; }
+.prod-invent-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody > tr td:nth-child(2) {
+  width: 25%; }
+.prod-invent-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody tr:last-child > td {
+  text-align: center; }
+
+.add-new-prod-page .p-header > div {
+  margin: -20px -5px 0px -5px;
+  padding: 10px 15px 10px 20px; }
+  .add-new-prod-page .p-header > div > h4 {
+    font-weight: bold; }
+.add-new-prod-page .page-content-wrapper .container .row .c-col-add-new-pg {
+  background: white; }
+  .add-new-prod-page .page-content-wrapper .container .row .c-col-add-new-pg form .sub-btn-wrapper {
+    text-align: center; }
+    .add-new-prod-page .page-content-wrapper .container .row .c-col-add-new-pg form .sub-btn-wrapper > button {
+      padding: 6px 36px;
+      font-size: 16px;
+      font-weight: normal; }
+
+.prod-overview-page .p-header .page-header-title {
+  display: inline-block;
+  margin: -20px -5px 0px -5px;
+  padding: 10px 15px 10px 20px; }
+  .prod-overview-page .p-header .page-header-title > h4 {
+    font-weight: bold; }
+.prod-overview-page .p-header .add-new-prod-link {
+  display: inline-block; }
+  .prod-overview-page .p-header .add-new-prod-link > a {
+    background: #d96c06;
+    color: white;
+    padding: 9.6px 16px;
+    border-radius: 5px;
+    font-weight: normal; }
+.prod-overview-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody > tr td:nth-child(2), .prod-overview-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody > tr td:nth-child(5) {
+  width: 25%; }
+.prod-overview-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody > tr td:nth-child(5), .prod-overview-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody > tr td:nth-child(5) {
+  text-align: center; }
+  .prod-overview-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody > tr td:nth-child(5) > a, .prod-overview-page .page-content-wrapper .container .row .col-md-12 .panel .panel-body .row .col-xs-12 .table-responsive #products_wrapper .row-two .col-sm-12 > table > tbody > tr td:nth-child(5) > a {
+    text-transform: capitalize; }
+
+/*
+Flaticon icon font: Flaticon
+Creation date: 24/01/2019 08:35
+*/
+@font-face {
+  font-family: "Flaticon";
+  src: url("http://localhost/gadgethub/assets/fonts/flaticon/Flaticon.eot");
+  src: url("http://localhost/gadgethub/assets/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("http://localhost/gadgethub/assets/fonts/flaticon/Flaticon.woff2") format("woff2"), url("http://localhost/gadgethub/assets/fonts/flaticon/Flaticon.woff") format("woff"), url("http://localhost/gadgethub/assets/fonts/flaticon/Flaticon.ttf") format("truetype"), url("http://localhost/gadgethub/assets/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("http://localhost/gadgethub/assets/fonts/flaticon/Flaticon.svg#Flaticon") format("svg"); } }
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.flaticon-box:before {
+  content: "\f100"; }
+
+.flaticon-product:before {
+  content: "\f101"; }
+
+.p-content {
+  padding: 48px 0; }
+
+/*# sourceMappingURL=custom.css.map */

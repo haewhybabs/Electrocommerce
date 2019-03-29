@@ -1,0 +1,91 @@
+
+// 
+// Custom style for the mega menu
+// 
+
+// Jump into mega menu
+header > nav 
+{
+    .container
+    {
+        .cate
+        {
+            .dropdown-menu
+            {
+                .mega-inside
+                {
+                    // Side bar parent
+                    .navSideBar
+                    {
+                        // Set padding
+                        padding: $spacing-normal 0;
+
+                        // Set background
+                        background: $color9;
+
+                        // Menu list parent
+                        > ul
+                        {
+                            // Flexible box
+                            display: flex;
+
+                            // Horizontal direction
+                            flex-direction: column;
+
+                            // Max content width
+                            width: max-content;
+
+                            // Each menu
+                            > li
+                            {
+                                // padding: $spacing-smaller 0;
+
+                                > a
+                                {
+                                    display: block;
+
+                                    padding: $spacing-smaller $spacing-large !important;
+                                }
+                            }
+                        }
+                    }
+
+                    // Nav menu content
+                    .navMenuContent
+                    {
+                        display: grid;
+
+                        grid-template-columns: 70% 30%;
+
+                        max-height: 74vh;
+
+                        padding: $spacing-normal;
+
+                        overflow-y: scroll;
+
+                        .mContentWrapper
+                        {
+                            display: grid;
+
+                            grid-template-rows: auto auto;
+
+                            .mrow
+                            {
+                                display: grid;
+
+                                grid-template-columns: 33% 33% 33%;
+
+                                padding-bottom: $spacing-normal;
+
+                                .bs-col
+                                {
+                                    padding: 0 $spacing-small;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
